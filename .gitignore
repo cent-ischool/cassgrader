@@ -1,4 +1,7 @@
 admin/data/
+fetched/
+blackboard/
+
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
