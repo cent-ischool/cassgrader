@@ -1,8 +1,7 @@
-versions = [
-    '2024-01-23',
-    '2024-01-20',
-    '2024-01-16',
-    '2024-01-15',
+history = [
+    {"ver" : "0.1.2-20240125", "text": "Report for reviewing homework assignments complete." },
+    {"ver" : "0.1.1-20240125", "text": "Fixed Issue with bb file creation when student assignment deleted from folder." },
+    {"ver" : "0.1.0-20240106", "text": "Initial release" }
 ]
 
-CURRENT_VERSION = versions[0]
+CURRENT_VERSION = history[0]['ver']

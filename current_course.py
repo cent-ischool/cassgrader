@@ -1,12 +1,15 @@
-CURRENT_COURSE_FILE = "/home/jovyan/library/.current_course"
+CURRENT_FILE = "/home/jovyan/library/.current_course"
+
 
 def read_current_course():
     try:
-        with open(CURRENT_COURSE_FILE, "r") as f:
-            return f.read().strip()
+        with open(CURRENT_FILE, "r") as f:
+            data = f.read().strip()
+            return data
     except FileNotFoundError:
-        return None
+        return None, None, None
 
-def write_current_course(course):
-    with open(CURRENT_COURSE_FILE, "w") as f:
-        f.write(course)
+
+def write_current_course(data):
+    with open(CURRENT_FILE, "w") as f:
+        f.write(data)
